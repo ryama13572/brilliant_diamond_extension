@@ -16,6 +16,7 @@ module.exports = {
       title: 'Override'
     }
   },
+
   pluginOptions: {
     browserExtension: {
       componentOptions: {
@@ -28,5 +29,9 @@ module.exports = {
         }
       }
     }
-  }
+  },
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 }
