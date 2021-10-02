@@ -6,7 +6,7 @@
     <v-row>
       <search-area
         @update-search-text="updateSearchTextMethod"
-        :searchtext="searchText"
+        :pushedcommand="pushedcommand"
       ></search-area>
     </v-row>
     <v-row>
@@ -31,15 +31,15 @@ export default {
     }
   },
   methods: {
-    updateSearchTextMethod (text) {
+    updateSearchTextMethod (text) { // テキストボックスの変更を受け取り、反映
       this.searchText = text
     },
-    addPushedCommandToSearchText () {
-      this.searchText += this.pushedcommand
-    },
-    pushedCommandMethodInMain (command) {
+    // addPushedCommandToSearchText () { // クリックされたボタンのコマンドをテキストボックスに反映
+    // this.searchText += this.pushedcommand
+    // },
+    pushedCommandMethodInMain (command) { // コマンドボタンのクリック及びデータを受け取り、テキストボックスに反映する関数を呼び出し
       this.pushedcommand = command
-      this.addPushedCommandToSearchText()
+      // this.addPushedCommandToSearchText()
     }
   }
 }

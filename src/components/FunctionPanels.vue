@@ -33,11 +33,11 @@ export default {
     }
   },
   methods: {
-    pushedCommandMethod (command) {
+    pushedCommandMethod (command) { // 子コンポーネントからコマンドボタンのクリックイベントとコマンドを受け取り
       this.pushedcommand = command
       this.pushedCommandEmit()
     },
-    pushedCommandEmit () {
+    pushedCommandEmit () { // 親コンポーネントにコマンドボタンクリックを通知
       this.$emit('pushed-command-event', this.pushedcommand)
     }
   }
