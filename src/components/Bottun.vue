@@ -1,13 +1,19 @@
 <template>
   <v-app>
-    <div class="d-flex">
-      <v-container style="background: #26c6da; color: white">
-        <!-- <div v-for="(group, index) in " :key="index"> -->
-          <div v-for="(bottun, index) in basic_buttons" :key="index">
+    <div>
+      <v-container>
+        <p>標準ボタン</p>
+        <v-row
+          class="my-5 pa-1 rounded-lg"
+          dense="True"
+          style="background: #90caf9"
+        >
+          <v-col cols="4" v-for="(bottun, index) in basic_buttons" :key="index">
             <v-tooltip top>
               <template v-slot:activator="{ on }">
                 <v-btn
                   class="my-1"
+                  block
                   v-on="on"
                   @click="pushButton(bottun.command)"
                 >
@@ -18,16 +24,20 @@
               ><br />
               <span>例: {{ bottun.example }}</span>
             </v-tooltip>
-          </div>
-        <!-- </div> -->
-      </v-container>
-      <v-container style="background: #26c6da; color: white">
-        <!-- <div v-for="(group, index) in " :key="index"> -->
-          <div v-for="(bottun, index) in advanced_buttons" :key="index">
+          </v-col>
+        </v-row>
+        <p>高度な検索</p>
+        <v-row class="my-5 pa-1 rounded-lg" dense="True" style="background: #66bb6a">
+          <v-col
+            cols="4"
+            v-for="(bottun, index) in advanced_buttons"
+            :key="index"
+          >
             <v-tooltip top>
               <template v-slot:activator="{ on }">
                 <v-btn
                   class="my-1"
+                  block
                   v-on="on"
                   @click="pushButton(bottun.command)"
                 >
@@ -38,8 +48,8 @@
               ><br />
               <span>例: {{ bottun.example }}</span>
             </v-tooltip>
-          </div>
-        <!-- </div> -->
+          </v-col>
+        </v-row>
       </v-container>
     </div>
   </v-app>
