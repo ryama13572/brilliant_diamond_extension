@@ -56,22 +56,38 @@
 </template>
 
 <script>
-import BasicButtons from "../assets/basic.json";
-import AdvancedButtons from "../assets/advanced.json";
+import BasicButtons from '../assets/basic.json'
+import AdvancedButtons from '../assets/advanced.json'
 export default {
-  data() {
+  data () {
     return {
       basic_buttons: BasicButtons,
       advanced_buttons: AdvancedButtons,
       value: null,
-    };
+      hoverFlag: false,
+      hoverIndex: null
+    }
   },
   methods: {
-    pushButton(command) {
-      this.value = command;
-      console.log(this.value);
-      this.$emit("push-button", this.value);
-    },
+    pushButton (command) {
+      this.value = command
+      console.log(this.value)
+      this.$emit('push-button', this.value)
+    }
   },
-};
+  computed: {
+    groupedArray () {
+      const base = this.basic_buttons.length
+      const SplitCnt = 3 // 何個ずつに分割するか
+      const GroupedA = []
+      for (let i = 0; i < Math.ceil(base / SplitCnt); i++) {
+        const MultipleCnt = i * SplitCnt // 3の倍数
+        // (i * 3)番目から(i * 3 + 3)番目まで取得
+        const result = this.array.slice(MultipleCnt, MultipleCnt + SplitCnt)
+        GroupedA.push(result)
+      }
+      return GroupedA
+    }
+  }
+}
 </script>

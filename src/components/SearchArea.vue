@@ -1,0 +1,26 @@
+<template>
+  <v-container>
+    <v-row>
+      <v-col
+        cols="9"
+      >
+        <v-form>
+          <v-text-field
+            label="search"
+            outlined
+          ></v-text-field>
+        </v-form>
+      </v-col>
+      <v-col
+        cols="1"
+      >
+        <v-btn
+          depressed
+          color="primary"
+        >
+          Go
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>

@@ -1,19 +1,23 @@
 <template>
-  <hello-world />
+  <v-app>
+    <main-page />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import MainPage from '@/components/MainPage.vue'
 
 export default {
   name: 'App',
-  components: { HelloWorld }
+  components: {
+    'main-page': MainPage
+  }
 }
 </script>
 
 <style>
 html {
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 12121212121212121212121200px;
 }
 </style>
