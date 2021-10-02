@@ -27,6 +27,5 @@ pnpm-debug.log*
 *.pub
 *.zip
 /artifacts
-
-package-lock.json
 package.json
+package-lock.json
