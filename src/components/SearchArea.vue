@@ -1,22 +1,24 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col
+        cols="9"
+      >
         <v-form>
           <v-text-field
             label="search"
             outlined
           ></v-text-field>
         </v-form>
-      </v-col>:
-      <v-col>
+      </v-col>
+      <v-col
+        cols="1"
+      >
         <v-btn
-          class="ma-2"
-          outlined
-          fab
-          color="indigo"
+          depressed
+          color="primary"
         >
-          <v-icon>mdi-format-list-bulleted-square</v-icon>
+          Go
         </v-btn>
       </v-col>
     </v-row>

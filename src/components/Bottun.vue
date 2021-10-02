@@ -68,15 +68,15 @@ export default {
   computed: {
     groupedArray () {
       const base = this.basic_buttons.length
-      const split_cnt = 3 // 何個ずつに分割するか
-      const grouped_array = []
-      for (let i = 0; i < Math.ceil(base / split_cnt); i++) {
-        const multiple_cnt = i * split_cnt // 3の倍数
+      const SplitCnt = 3 // 何個ずつに分割するか
+      const GroupedA = []
+      for (let i = 0; i < Math.ceil(base / SplitCnt); i++) {
+        const MultipleCnt = i * SplitCnt // 3の倍数
         // (i * 3)番目から(i * 3 + 3)番目まで取得
-        const result = this.array.slice(multiple_cnt, multiple_cnt + split_cnt)
-        grouped_array.push(result)
+        const result = this.array.slice(MultipleCnt, MultipleCnt + SplitCnt)
+        GroupedA.push(result)
       }
-      return grouped_array
+      return GroupedA
     }
   }
 }

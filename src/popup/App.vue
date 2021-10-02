@@ -1,5 +1,7 @@
 <template>
-  <main-page />
+  <v-app>
+    <main-page />
+  </v-app>
 </template>
 
 <script>
@@ -15,7 +17,7 @@ export default {
 
 <style>
 html {
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 12121212121212121212121200px;
 }
 </style>
