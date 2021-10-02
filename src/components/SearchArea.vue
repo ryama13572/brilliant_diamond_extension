@@ -1,0 +1,24 @@
+<template>
+  <v-container>
+    <v-row>
+      <v-col>
+        <v-form>
+          <v-text-field
+            label="search"
+            outlined
+          ></v-text-field>
+        </v-form>
+      </v-col>:
+      <v-col>
+        <v-btn
+          class="ma-2"
+          outlined
+          fab
+          color="indigo"
+        >
+          <v-icon>mdi-format-list-bulleted-square</v-icon>
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>

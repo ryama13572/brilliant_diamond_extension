@@ -46,38 +46,38 @@
 </template>
 
 <script>
-import BasicButtons from "../assets/basic.json";
-import AdvancedButtons from "../assets/advanced.json";
+import BasicButtons from '../assets/basic.json'
+import AdvancedButtons from '../assets/advanced.json'
 export default {
-  data() {
+  data () {
     return {
       basic_buttons: BasicButtons,
       advanced_buttons: AdvancedButtons,
       value: null,
       hoverFlag: false,
-      hoverIndex: null,
-    };
+      hoverIndex: null
+    }
   },
   methods: {
-    pushButton(command) {
-      this.value = command;
+    pushButton (command) {
+      this.value = command
       console.log(this.value)
-      this.$emit("push-button", this.value);
-    },
+      this.$emit('push-button', this.value)
+    }
   },
   computed: {
-    groupedArray() {
-      const base = this.basic_buttons.length;
-      const split_cnt = 3; // 何個ずつに分割するか
-      const grouped_array = [];
+    groupedArray () {
+      const base = this.basic_buttons.length
+      const split_cnt = 3 // 何個ずつに分割するか
+      const grouped_array = []
       for (let i = 0; i < Math.ceil(base / split_cnt); i++) {
-        let multiple_cnt = i * split_cnt; // 3の倍数
+        const multiple_cnt = i * split_cnt // 3の倍数
         // (i * 3)番目から(i * 3 + 3)番目まで取得
-        let result = this.array.slice(multiple_cnt, multiple_cnt + split_cnt);
-        grouped_array.push(result);
+        const result = this.array.slice(multiple_cnt, multiple_cnt + split_cnt)
+        grouped_array.push(result)
       }
-      return grouped_array;
-    },
-  },
-};
+      return grouped_array
+    }
+  }
+}
 </script>

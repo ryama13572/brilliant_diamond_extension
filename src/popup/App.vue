@@ -1,13 +1,15 @@
 <template>
-  <hello-world />
+  <main-page />
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import MainPage from '@/components/MainPage.vue'
 
 export default {
   name: 'App',
-  components: { HelloWorld }
+  components: {
+    'main-page': MainPage
+  }
 }
 </script>
 
