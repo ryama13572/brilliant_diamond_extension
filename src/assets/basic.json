@@ -1,0 +1,62 @@
+[
+    {
+        "label": "かつ",
+        "command": " ",
+        "description": "両方の単語を含む文字列を検索する",
+        "example": "東京 大阪"
+    },
+    {
+        "label": "または",
+        "command": "OR",
+        "description": "いずれかの単語を含む文字列を検索する",
+        "example": "東京 OR 大阪"
+    },
+    {
+        "label": "完全一致",
+        "command": "\" \"",
+        "description": "\" \"で囲まれた文字列を完全一致で表示する",
+        "example": "\"東京都\""
+    },
+    {
+        "label": "除く",
+        "command": "-",
+        "description": "-以後の単語を含む結果を表示しない",
+        "example": "アイドル -嵐"
+    },
+    {
+        "label": "ワイルドカード",
+        "command": "*",
+        "description": "*に任意の文字が入った結果を表示する",
+        "example": "絶対*命"
+    },
+    {
+        "label": "SNS検索",
+        "command": "@",
+        "description": "特定のSNSのみ検索する",
+        "example": "コロナ @twitter"
+    },
+    {
+        "label": "ハッシュタグ",
+        "command": "#",
+        "description": "特定のハッシュタグを含む検索結果を返す",
+        "example": "よくわからん"
+    },
+    {
+        "label": "数値の範囲検索",
+        "command": "..",
+        "description": "2つの数値の間に配置すると、数値の範囲内で一致する検索結果を返す",
+        "example": "iPhone 2..7"
+    },
+    {
+        "label": "( )",
+        "command": "( )",
+        "description": "検索語をグループ化し、検索の優先順位を変更できる",
+        "example": "(夏季 | 冬季) オリンピック"
+    },
+    {
+        "label": "価格",
+        "command": "$",
+        "description": "価格を返す",
+        "example": "よくわからん"
+    }
+]

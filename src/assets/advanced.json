@@ -1,0 +1,92 @@
+[
+    {
+        "label": "キャッシュ",
+        "command": "cache:",
+        "description": "特定ページのGoogleのキャッシュページを表示する",
+        "example": "cache:http://www.iwsec.org/mws/2021/"
+    },
+    {
+        "label": "ファイルタイプ",
+        "command": "filetype:",
+        "description": "特定のファイル拡張子のファイルのみ検索する",
+        "example": "機密情報 filetype:pdf"
+    },
+    {
+        "label": "類似サイト",
+        "command": "related:",
+        "description": "特定のサイトに類似したWebサイトを返す",
+        "example": "related:http://www.iwsec.org/mws/2021/"
+    },
+    {
+        "label": "サイト内検索",
+        "command": "site:",
+        "description": "特定のサイト内での検索結果を表示する",
+        "example": "事前課題 site:http://www.iwsec.org/mws/"
+    },
+    {
+        "label": "URL内検索",
+        "command": "inurl:",
+        "description": "特定の単語が含まれるようなURLを検索する",
+        "example": "inurl:MWS"
+    },
+    {
+        "label": "期間指定",
+        "command": "daterange:",
+        "description": "",
+        "example": "コロナ @twitter"
+    },
+    {
+        "label": "URL内検索(複数)",
+        "command": "allinurl:",
+        "description": "特定の単語が全て含まれているようなURLを検索する",
+        "example": "allinurl:MWS 2021"
+    },
+    {
+        "label": "アンカーテキスト検索",
+        "command": "inanchor:",
+        "description": "特定の単語が含まれているようなアンカーテキストを使用してリンクされているページを表示する",
+        "example": "inanchor:MWS"
+    },
+    {
+        "label": "アンカーテキスト検索(複数)",
+        "command": "allinanchor:",
+        "description": "inanchorの複数版",
+        "example": "allinanchor:MWS 2021"
+    },
+    {
+        "label": "ページ内テキスト検索",
+        "command": "intext:",
+        "description": "ページの本文で単語と一致するような結果を返す",
+        "example": "intext:MWS"
+    },
+    {
+        "label": "ページ内テキスト検索(複数)",
+        "command": "allintext:",
+        "description": "intextの複数版",
+        "example": "allintext:MWS 2021"
+    },
+    {
+        "label": "ページタイトル検索",
+        "command": "intitle:",
+        "description": "ページタイトルに特定の単語が含まれているような結果を返す",
+        "example": "intitle:MWS"
+    },
+    {
+        "label": "ページタイトル検索(複数)",
+        "command": "allintitle:",
+        "description": "intitleの複数版",
+        "example": "allintitle:MWS 2021"
+    },
+    {
+        "label": "URL指定検索",
+        "command": "info:",
+        "description": "URLを指定して検索する",
+        "example": "info:www.yahoo.co.jp"
+    },
+    {
+        "label": "辞書検索",
+        "command": "define:",
+        "description": "単語の意味を検索する",
+        "example": "define:vulnerability"
+    }
+]
