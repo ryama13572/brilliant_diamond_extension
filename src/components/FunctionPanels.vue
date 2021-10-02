@@ -5,7 +5,7 @@
         コマンド作成ボタン
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <command-buttons />
+        <command-buttons @push-button="pushedCommandMethod"></command-buttons>
       </v-expansion-panel-content>
     </v-expansion-panel>
     <v-expansion-panel>
@@ -26,6 +26,20 @@ export default {
   components: {
     'command-buttons': Bottun,
     'command-management': CommandManagement
+  },
+  data () {
+    return {
+      pushedcommand: ''
+    }
+  },
+  methods: {
+    pushedCommandMethod (command) {
+      this.pushedcommand = command
+      this.pushedCommandEmit()
+    },
+    pushedCommandEmit () {
+      this.$emit('pushed-command-event', this.pushedcommand)
+    }
   }
 }
 </script>

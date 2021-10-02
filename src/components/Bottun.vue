@@ -72,7 +72,7 @@ export default {
     pushButton (command) {
       this.value = command
       console.log(this.value)
-      this.$emit('push-button', this.value)
+      this.$emit('push-button', command)
     }
   },
   computed: {
