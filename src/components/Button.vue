@@ -1,7 +1,7 @@
 <template>
   <!-- <v-container style="background: red"> -->
   <v-container>
-    <p class="mb-0" style="font-size: 1rem;">
+    <p class="mb-0" style="font-size: 0.9rem;">
       標準ボタン
     </p>
     <v-row
@@ -28,7 +28,7 @@
       </v-col>
     </v-row>
     <v-divider class="mb-5"></v-divider>
-    <p class="mb-0" style="font-size: 1rem;">
+    <p class="mb-0" style="font-size: 0.9rem;">
       高度な検索
     </p>
     <v-row

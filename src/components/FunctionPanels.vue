@@ -1,7 +1,7 @@
 <template>
   <v-expansion-panels accordion>
     <v-expansion-panel>
-      <v-expansion-panel-header >
+      <v-expansion-panel-header class="font-weight-bold" style="font-size: 1rem">
         コマンド作成ボタン
       </v-expansion-panel-header>
       <!-- <v-expansion-panel-content style="background: #90caf9"> -->
@@ -10,7 +10,7 @@
       </v-expansion-panel-content>
     </v-expansion-panel>
     <v-expansion-panel>
-      <v-expansion-panel-header>
+      <v-expansion-panel-header class="font-weight-bold" style="font-size: 1rem">
         コマンド管理機能
       </v-expansion-panel-header>
       <v-expansion-panel-content>
