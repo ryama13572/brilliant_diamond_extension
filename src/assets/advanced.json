@@ -36,7 +36,7 @@
         "example": "コロナ @twitter"
     },
     {
-        "label": "URL内検索(複数)",
+        "label": "URL内検索(複)",
         "command": "allinurl:",
         "description": "特定の単語が全て含まれているようなURLを検索する",
         "example": "allinurl:MWS 2021"
@@ -48,7 +48,7 @@
         "example": "inanchor:MWS"
     },
     {
-        "label": "アンカーテキスト検索(複数)",
+        "label": "アンカーテキスト検索(複)",
         "command": "allinanchor:",
         "description": "inanchorの複数版",
         "example": "allinanchor:MWS 2021"
@@ -60,7 +60,7 @@
         "example": "intext:MWS"
     },
     {
-        "label": "ページ内テキスト検索(複数)",
+        "label": "ページ内テキスト検索(複)",
         "command": "allintext:",
         "description": "intextの複数版",
         "example": "allintext:MWS 2021"
@@ -72,7 +72,7 @@
         "example": "intitle:MWS"
     },
     {
-        "label": "ページタイトル検索(複数)",
+        "label": "ページタイトル検索(複)",
         "command": "allintitle:",
         "description": "intitleの複数版",
         "example": "allintitle:MWS 2021"

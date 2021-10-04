@@ -1,9 +1,10 @@
 <template>
-  <v-expansion-panels>
+  <v-expansion-panels accordion>
     <v-expansion-panel>
-      <v-expansion-panel-header>
+      <v-expansion-panel-header >
         コマンド作成ボタン
       </v-expansion-panel-header>
+      <!-- <v-expansion-panel-content style="background: #90caf9"> -->
       <v-expansion-panel-content>
         <command-buttons @push-button="pushedCommandMethod"></command-buttons>
       </v-expansion-panel-content>
@@ -19,12 +20,12 @@
   </v-expansion-panels>
 </template>
 <script>
-import Bottun from '@/components/Bottun.vue'
+import Button from '@/components/Button.vue'
 import CommandManagement from '@/components/CommandManagement.vue'
 
 export default {
   components: {
-    'command-buttons': Bottun,
+    'command-buttons': Button,
     'command-management': CommandManagement
   },
   data () {

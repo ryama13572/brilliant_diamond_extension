@@ -4,11 +4,10 @@
       :headers="headers"
       :items="commands"
       sort-by="useCase"
-      class="elevation-1"
     >
       <template v-slot:top>
         <v-toolbar flat>
-          <v-toolbar-title>コマンド一覧</v-toolbar-title>
+          <v-toolbar-title style="font-size: 1rem">コマンド一覧</v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
           <v-dialog v-model="dialog" max-width="500px">
@@ -17,7 +16,7 @@
                 <span class="text-h5">{{ formTitle }}</span>
               </v-card-title>
 
-              <v-card-text>
+              <v-card-text style="font-size: 0.75rem">
                 <v-container>
                   <v-row>
                     <v-col cols="12" sm="6" md="4">
@@ -73,11 +72,11 @@
       </template>
     </v-data-table>
 
-    <v-divider></v-divider>
+    <v-divider class="my-2"></v-divider>
 
-    <v-card>
-      <v-card-title>
-        <span class="text-h5">コマンド新規作成</span>
+    <v-card elevation="0">
+      <v-card-title style="font-size: 1rem">
+        コマンド新規作成
         <v-divider class="mx-4" inset vertical></v-divider>
       </v-card-title>
 
@@ -106,11 +105,11 @@
       </v-card-actions>
     </v-card>
 
-    <v-divider></v-divider>
+    <v-divider class="my-2"></v-divider>
 
-    <v-card>
-      <v-card-title>
-        <span class="text-h5">命令のインポート・エクスポート</span>
+    <v-card elevation="0">
+      <v-card-title style="font-size: 1rem">
+        命令のインポート・エクスポート
         <v-divider class="mx-4" inset vertical></v-divider>
       </v-card-title>
       <v-card-text>
