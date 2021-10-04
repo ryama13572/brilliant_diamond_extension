@@ -19,7 +19,7 @@
     },
     {
         "label": "除く",
-        "command": "-",
+        "command": " -",
         "description": "-以後の単語を含む結果を表示しない",
         "example": "アイドル -嵐"
     },
@@ -31,7 +31,7 @@
     },
     {
         "label": "SNS検索",
-        "command": "@",
+        "command": " @",
         "description": "特定のSNSのみ検索する",
         "example": "コロナ @twitter"
     },
@@ -39,11 +39,11 @@
         "label": "ハッシュタグ",
         "command": "#",
         "description": "特定のハッシュタグを含む検索結果を返す",
-        "example": "よくわからん"
+        "example": "#Covid-19"
     },
     {
         "label": "数値の範囲検索",
-        "command": "..",
+        "command": " ..",
         "description": "2つの数値の間に配置すると、数値の範囲内で一致する検索結果を返す",
         "example": "iPhone 2..7"
     },
@@ -55,8 +55,8 @@
     },
     {
         "label": "価格",
-        "command": "$",
-        "description": "価格を返す",
-        "example": "よくわからん"
+        "command": " $",
+        "description": "価格が関係した検索を行う",
+        "example": "Google pixel $400"
     }
 ]
