@@ -14,7 +14,7 @@
         コマンド管理機能
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <command-management />
+        <command-management @push-button="pushedCommandMethod"></command-management>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
