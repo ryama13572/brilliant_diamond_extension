@@ -7,7 +7,7 @@
     >
       <template v-slot:top>
         <v-toolbar flat>
-          <v-toolbar-title style="font-size: 1rem">コマンド一覧</v-toolbar-title>
+          <v-toolbar-title style="font-size: 0.9rem">コマンド一覧</v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
           <v-dialog v-model="dialog" max-width="500px">
@@ -76,7 +76,7 @@
     <v-divider class="my-2"></v-divider>
 
     <v-card elevation="0">
-      <v-card-title style="font-size: 1rem">
+      <v-card-title style="font-size: 0.9rem">
         コマンド新規作成
         <v-divider class="mx-4" inset vertical></v-divider>
       </v-card-title>
@@ -109,7 +109,7 @@
     <v-divider class="my-2"></v-divider>
 
     <v-card elevation="0">
-      <v-card-title style="font-size: 1rem">
+      <v-card-title style="font-size: 0.9rem">
         命令のインポート・エクスポート
         <v-divider class="mx-4" inset vertical></v-divider>
       </v-card-title>
