@@ -7,19 +7,19 @@
     },
     {
         "label": "ファイルタイプ",
-        "command": "filetype:",
+        "command": " filetype:",
         "description": "特定のファイル拡張子のファイルのみ検索する",
         "example": "機密情報 filetype:pdf"
     },
     {
         "label": "類似サイト",
-        "command": "related:",
+        "command": " related:",
         "description": "特定のサイトに類似したWebサイトを返す",
         "example": "related:http://www.iwsec.org/mws/2021/"
     },
     {
         "label": "サイト内検索",
-        "command": "site:",
+        "command": " site:",
         "description": "特定のサイト内での検索結果を表示する",
         "example": "事前課題 site:http://www.iwsec.org/mws/"
     },
@@ -30,10 +30,16 @@
         "example": "inurl:MWS"
     },
     {
-        "label": "期間指定",
-        "command": "daterange:",
-        "description": "",
-        "example": "コロナ @twitter"
+        "label": "~より前",
+        "command": " before:",
+        "description": "ある日付より前のサイトのみ検索する",
+        "example": "コロナ before:2000/10/10"
+    },
+    {
+        "label": "~より後",
+        "command": " after:",
+        "description": "ある日付より後のサイトのみ検索する",
+        "example": "コロナ after:2020/10/10"
     },
     {
         "label": "URL内検索(複)",
