@@ -1,9 +1,5 @@
 <template>
   <v-container>
-    <v-row style="background: #1976D2">
-      <img src="../assets/h12.png" height="80px" width="700px" class="ma-2"/>
-      <!-- <h1 class=".text-h1 mt-5 ml-5 mb-2">Googleコマンドジェネレーター</h1> -->
-    </v-row>
     <v-row>
       <search-area
         @update-search-text="updateSearchTextMethod"
