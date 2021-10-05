@@ -66,7 +66,7 @@
       <template v-slot:[`item.actions`]="{ item }">
         <v-icon small class="mr-2" @click="editItem(item)"> mdi-pencil </v-icon>
         <v-icon small class="mr-2" @click="deleteItem(item)"> mdi-delete </v-icon>
-        <v-icon small @click="moveText(item)"> mdi-magnify </v-icon>
+        <v-icon small class="mr-2" @click="moveText(item)"> mdi-magnify </v-icon>
       </template>
       <template v-slot:no-data>
         <v-btn color="primary" @click="initialize"> Reset </v-btn>
