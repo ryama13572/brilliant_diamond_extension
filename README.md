@@ -20,12 +20,18 @@ google検索オプションを活用するためのChrome拡張機能です。
 
 ### 前提条件
 
-- Vue 2系
+- Vue 2系（開発時点でvuetifyがVue3に対応していないため）
 - npm
 
 ### 使用手順（一般ユーザー向け）
 
-github releases 未整備
+1. [github releases](https://github.com/ryama13572/brilliant_diamond_extension/releases)より`dist.zip`ファイルをダウンロードして解凍してください。
+
+2. 解凍したdistディレクトリをchrome拡張機能として読み込みます。詳細は下記のとおりです。
+
+   ```
+   Chrome右上の「…」ボタン>その他のツール>拡張機能>デベロッパーモードを有効化>パッケージ化されてない拡張機能を読み込む
+   ```
 
 ### 使用手順（開発者向け）
 
@@ -48,7 +54,7 @@ github releases 未整備
    $ npm run build
    ```
 
-4. ビルド後、生成された.distディレクトリをchrome拡張機能として読み込みます。
+4. ビルド後、生成された.distディレクトリをchrome拡張機能として読み込みます。詳細は下記のとおりです。
 
    ```
    Chrome右上の「…」ボタン>その他のツール>拡張機能>デベロッパーモードを有効化>パッケージ化されてない拡張機能を読み込む
