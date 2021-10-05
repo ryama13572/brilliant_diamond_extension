@@ -14,31 +14,38 @@ google検索オプションを活用するためのChrome拡張機能です。
 
 <!-- できたらここにgifのデモを入れる -->
 
+<!-- 発表班の説明ができしだいそちらにあわせる -->
+
 ## install
 
 ### 前提条件
 
-- Vue 3未満
+- Vue 2系
 - npm
 
-### 使用手順
+### 使用手順（一般ユーザー向け）
+
+github releases 未整備
+
+### 使用手順（開発者向け）
 
 1. リポジトリをクローンします。
 
    ```
-   git clone https://github.com/ryama13572/brilliant_diamond_extension.git
+   $ git clone https://github.com/ryama13572/brilliant_diamond_extension.git
    ```
 
 2. 依存関係をインストールします
 
    ```
-   npm install
+   $ cd brilliant_diamond_extension
+   $ npm install
    ```
 
 3. プロジェクトをビルドします
 
    ```
-   npm run build
+   $ npm run build
    ```
 
 4. ビルド後、生成された.distディレクトリをchrome拡張機能として読み込みます。
